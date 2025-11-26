@@ -5,9 +5,11 @@ import { setupCounter } from './counter.js'
 import { Header } from './components/header.js'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import { getPokemons } from './services/pokemonService.js';
+import { renderPokemonList } from './views/pokemon_list.js'
 
 document.querySelector('#app').innerHTML = `
   ${Header()}
 `
 
-setupCounter(document.querySelector('#counter'))
+const container = document.getElementById('app');
