@@ -94,3 +94,20 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.btn-johto{
+  background-color: silver;
+  color: #1a1a1a;
+  border-radius: 12px;
+}
+
+.btn-kanto {
+  background-color: red;
+  border-radius: 12px;
+}
+
+.btn-nacional{
+  background-color: greenyellow;
+  color: #1a1a1a;
+  border-radius: 12px;
+}

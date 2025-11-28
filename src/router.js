@@ -1,4 +1,8 @@
 import {Home} from './views/Home';
+import { Pokemon_List } from './views/pokemon_list';
+import { NotFound } from './views/NotFound';
+import { Region_List } from './views/region_list';
+import { Pokemon_Detail } from './views/pokemon_details';
 
 
 export function router(){
@@ -7,10 +11,18 @@ export function router(){
 
     const routes = {
         '/': Home,
-        '/list': List,
-        '/region-list': Region_List
+        '/lista-pokemon': Pokemon_List,
+        '/kanto': () => Region_List('kanto'),
+        '/johto': () => Region_List('johto')
     };
 
-    const screen = routes[route] || NotFound;
+    let screen;
+    if (route.startsWith("/pokemon/")) {
+        const id = route.split("/")[2];
+        screen = () => Pokemon_Detail(id);
+    } else {
+        screen = routes[route] || NotFound;
+    }
+
     view.innerHTML = screen();
 }

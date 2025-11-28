@@ -5,7 +5,7 @@ export function Header() {
   return `
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Pokédex</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -24,7 +24,7 @@ export function Header() {
           <a class="nav-link" href="#/">Inicio <span class="visually-hidden">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#/lista-pokemon">Lista de Pokémon</a>
+          <a class="nav-link" href="#/lista-pokemon">Pokédex Nacional</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -36,14 +36,11 @@ export function Header() {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Regiones
+            Pokedex Regional
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Kanto</a></li>
-            <li><a class="dropdown-item" href="#">Johto</a></li>
-            <li><a class="dropdown-item" href="#">Hoenn</a></li>
-            <li><a class="dropdown-item" href="#">Sinnoh</a></li>
-            <li><a class="dropdown-item" href="#">Teselia</a></li>
+            <li><a class="dropdown-item" href="#/kanto">Kanto</a></li>
+            <li><a class="dropdown-item" href="#/johto">Johto</a></li>
           </ul>
         </li>
 
