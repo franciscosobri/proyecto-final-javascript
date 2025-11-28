@@ -1,4 +1,4 @@
-import { createPokemonCard } from "../services/cards.js";
+import { createPokemonCard } from "../components/cards.js";
 import { getPokemons } from "../services/pokemonService.js";
 
 let currentPage = 0;

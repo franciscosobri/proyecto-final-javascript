@@ -1,6 +1,3 @@
-// -> importa Bootstrap preferiblemente en main.js (una sola vez)
-
-
 export function Header() {
   return `
 <nav class="navbar navbar-expand-lg navbar-light bg-light">

@@ -1,4 +1,4 @@
-import { createPokemonCard } from "../services/cards.js";
+import { createPokemonCard } from "../components/cards.js";
 import { getPokemonsByRegion } from "../services/regionService.js";
 
 export function Region_List(regionName) {

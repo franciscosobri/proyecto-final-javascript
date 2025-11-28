@@ -111,3 +111,13 @@ button:focus-visible {
   color: #1a1a1a;
   border-radius: 12px;
 }
+
+#app{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main#main-content{
+  flex: 1;
+}
